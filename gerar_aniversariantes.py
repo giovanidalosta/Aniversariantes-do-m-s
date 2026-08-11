@@ -16,7 +16,7 @@ def localizar_pastas():
     return pasta_base, pasta_projeto
 
 
-def localizar_fonte(tamanho=40):
+def localizar_fonte(tamanho=38):
     caminhos = [
         "C:/Windows/Fonts/calibrib.ttf",
         "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
@@ -43,7 +43,7 @@ def gerar_imagem(data_text, pasta_saida=None, arquivo_modelo=None):
     img = Image.open(arquivo_modelo)
     draw = ImageDraw.Draw(img)
 
-    fonte = localizar_fonte(40)
+    fonte = localizar_fonte(38)
     cor = "#13A8C8"
 
     x = 940
